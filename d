@@ -29,8 +29,6 @@ fi
 eval set -- "$PARSED"
 
 
-uid=$(id -u)
-gid=$(id -g)
 image_name="stepik_intro_db"
 container_name="stepik_intro_db"
 

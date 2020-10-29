@@ -17,8 +17,6 @@ RUN apt-get update && \
     apt-get install -y git && \
     # MySQL database server (metapackage depending on the latest version)
     apt-get install -y mysql-server && \
-    # give access for user to working directory
-    chown $uid:$gid $home && \
     # Ensure that excessive files are deleted
     # https://github.com/tianon/docker-brew-ubuntu-core/issues/122#issuecomment-495332014
     rm -r /var/lib/apt/lists/*
